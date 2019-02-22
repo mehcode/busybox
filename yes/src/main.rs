@@ -34,7 +34,7 @@ fn main() -> io::Result<()> {
 
     loop {
         match buf.write_all(expletive.as_bytes()) {
-            // If both operations were successful, continue to loop
+            // If the operation was successful, continue to loop
             Ok(()) => {}
 
             // A BrokenPipe error indicates that the commmand we are
